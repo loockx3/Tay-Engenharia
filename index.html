@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Tay Engenharia | Projetos Estruturais, Laudos e Regularizações</title>
+  <meta name="description" content="Projetos residenciais, comerciais, cálculos estruturais e laudos técnicos em conformidade com as normas ABNT. Segurança técnica e jurídica para sua obra.">
+  
+  <!-- Security Headers (AppSec-by-Design) -->
+  <!-- Strict Content Security Policy blocking inline script execution -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.google-analytics.com https://connect.facebook.net; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://*.whatsapp.com; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <!-- Prevent navigation referrer leakage -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="referrer-policy" content="strict-origin-when-cross-origin">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Defer JavaScript execution for performance, loaded securely from relative origin -->
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#" class="logo" aria-label="Tay Engenharia Home">
+        <!-- Minimal Drafting Compass & Ruler SVG Logo -->
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2L2 22h3l2-4h10l2 4h3L12 2zm-4.13 14L12 8.25 16.13 16H7.87z"/>
+          <path d="M12 5.5l1.5 3h-3z" opacity="0.7"/>
+          <circle cx="12" cy="12" r="1.5" />
+        </svg>
+        <span>TAY<span class="accent-color">ENGENHARIA</span></span>
+      </a>
+      <div class="header-cta">
+        <a href="#" class="btn btn-primary js-whatsapp-link" target="_blank" rel="noopener noreferrer" id="header-whatsapp-cta">
+          Falar com Engenheiro
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <svg class="hero-tag-icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+          </svg>
+          Segurança Jurídica & Rigor Técnico
+        </div>
+        <h1 id="main-headline">Transformamos seu projeto em realidade com precisão técnica e segurança jurídica.</h1>
+        <p class="lead">Soluções completas em Engenharia Civil. Projetos estruturais, laudos periciais e regularizações com garantia de cumprimento de prazos, normas técnicas (ABNT) e aprovações nos órgãos municipais.</p>
+        
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary js-whatsapp-link" target="_blank" rel="noopener noreferrer" id="hero-primary-cta">
+            <!-- Secure External Link (rel="noopener noreferrer") -->
+            Falar com o Engenheiro Responsável
+          </a>
+          <a href="#services" class="btn btn-secondary" id="hero-secondary-cta">
+            Nossos Serviços
+          </a>
+        </div>
+      </div>
+      
+      <!-- Tech Blueprint Visual Frame (Desktop only) -->
+      <div class="hero-visual">
+        <div class="blueprint-card" aria-hidden="true">
+          <div class="blueprint-header">
+            <span class="blueprint-title">Planta Estrutural</span>
+            <span class="blueprint-badge">V-01.4</span>
+          </div>
+          <div class="blueprint-svg">
+            <svg width="280" height="160" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Technical engineering grid background -->
+              <path d="M0 20H280M0 40H280M0 60H280M0 80H280M0 100H280M0 120H280M0 140H280" stroke="#f59e0b" stroke-opacity="0.08" stroke-width="1"/>
+              <path d="M40 0V160M80 0V160M120 0V160M160 0V160M200 0V160M240 0V160" stroke="#f59e0b" stroke-opacity="0.08" stroke-width="1"/>
+              
+              <!-- Structural foundations representation -->
+              <rect x="30" y="30" width="220" height="100" rx="4" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="4 4"/>
+              
+              <!-- Columns and Beams (Precision Lines) -->
+              <line x1="50" y1="50" x2="230" y2="50" stroke="#f59e0b" stroke-opacity="0.6" stroke-width="2"/>
+              <line x1="50" y1="110" x2="230" y2="110" stroke="#f59e0b" stroke-opacity="0.6" stroke-width="2"/>
+              <line x1="80" y1="50" x2="80" y2="110" stroke="#f59e0b" stroke-opacity="0.6" stroke-width="2"/>
+              <line x1="200" y1="50" x2="200" y2="110" stroke="#f59e0b" stroke-opacity="0.6" stroke-width="2"/>
+              
+              <!-- Nodes -->
+              <circle cx="80" cy="50" r="4" fill="#f59e0b" fill-opacity="0.8"/>
+              <circle cx="200" cy="50" r="4" fill="#f59e0b" fill-opacity="0.8"/>
+              <circle cx="80" cy="110" r="4" fill="#f59e0b" fill-opacity="0.8"/>
+              <circle cx="200" cy="110" r="4" fill="#f59e0b" fill-opacity="0.8"/>
+              
+              <!-- Dimensions annotations -->
+              <path d="M80 35H200" stroke="#94a3b8" stroke-width="1"/>
+              <path d="M80 30V40M200 30V40" stroke="#94a3b8" stroke-width="1"/>
+              <text x="140" y="28" fill="#94a3b8" font-size="8" text-anchor="middle" font-family="monospace">d = 12.00m</text>
+            </svg>
+          </div>
+          <div class="blueprint-details">
+            <div class="blueprint-detail-item">
+              <strong>Tipo de Fundação</strong>
+              <span>Sapata Corrida / Estacas</span>
+            </div>
+            <div class="blueprint-detail-item">
+              <strong>Cálculo Normativo</strong>
+              <span>ABNT NBR 6118</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossos Serviços Section -->
+  <section class="services section-padding" id="services">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Nossas Frentes de Atuação</h2>
+        <p class="section-subtitle">Projetos de engenharia planejados sob medida, com foco na otimização de materiais e total conformidade com a legislação vigente.</p>
+      </div>
+      
+      <div class="services-grid">
+        
+        <!-- Card 1: Projetos Residenciais & Comerciais -->
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3>Projetos Residenciais &amp; Comerciais</h3>
+          <p>Desenvolvimento completo de projetos arquitetônicos integrados, garantindo estética, funcionalidade e aproveitamento ideal de áreas internas e externas.</p>
+          <a href="#" class="btn-link js-whatsapp-link" data-service-key="residencial" target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento para Projetos Residenciais e Comerciais">
+            Solicitar Orçamento 
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </article>
+
+        <!-- Card 2: Projetos Estruturais -->
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <line x1="9" y1="3" x2="9" y2="21"/>
+              <line x1="15" y1="3" x2="15" y2="21"/>
+              <line x1="3" y1="9" x2="21" y2="9"/>
+              <line x1="3" y1="15" x2="21" y2="15"/>
+            </svg>
+          </div>
+          <h3>Projetos Estruturais &amp; Fundações</h3>
+          <p>Dimensionamento e cálculo de estruturas em concreto armado, aço e alvenaria estrutural. Garantia de estabilidade e economia de insumos (ferro e concreto).</p>
+          <a href="#" class="btn-link js-whatsapp-link" data-service-key="estrutural" target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento para Projetos Estruturais e Fundações">
+            Solicitar Orçamento
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </article>
+
+        <!-- Card 3: Laudos Periciais -->
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+          <h3>Laudos Técnicos &amp; Perícias</h3>
+          <p>Emissão de Laudos de Reforma (NBR 16280), vistorias de vizinhança, perícias judiciais, laudo de entrega de obra e atestados de estabilidade estrutural.</p>
+          <a href="#" class="btn-link js-whatsapp-link" data-service-key="laudos" target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento para Laudos Técnicos e Perícias">
+            Solicitar Orçamento
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </article>
+
+        <!-- Card 4: Regularizações -->
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+              <line x1="12" y1="11" x2="12" y2="17"/>
+              <line x1="9" y1="14" x2="15" y2="14"/>
+            </svg>
+          </div>
+          <h3>Regularizações &amp; Reformas</h3>
+          <p>Regularização documental de imóveis junto à Prefeitura (Habite-se, Alvarás) e coordenação técnica de reformas residenciais de pequeno e médio porte.</p>
+          <a href="#" class="btn-link js-whatsapp-link" data-service-key="regularizacao" target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento para Regularizações e Reformas">
+            Solicitar Orçamento
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </article>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Trabalhamos Section -->
+  <section class="section-padding" id="process">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">O Processo Seguro</h2>
+        <p class="section-subtitle">Metodologia estruturada para garantir a melhor entrega técnica, controle de custos e total segurança jurídica em todas as etapas.</p>
+      </div>
+      
+      <div class="process-timeline">
+        
+        <!-- Step 1 -->
+        <div class="process-step">
+          <div class="process-number" aria-hidden="true">1</div>
+          <div class="process-content">
+            <h3>Briefing Inicial no WhatsApp</h3>
+            <p>Alinhamento dos objetivos do seu projeto ou laudo diretamente com o engenheiro responsável. Coleta das primeiras informações do lote, planta ou área a ser analisada.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-step">
+          <div class="process-number" aria-hidden="true">2</div>
+          <div class="process-content">
+            <h3>Estudo de Viabilidade Técnico-Financeira</h3>
+            <p>Análise preliminar dos parâmetros construtivos e normas de segurança vigentes. Elaboração de uma proposta técnica clara, justa e com prazos reais garantidos por contrato.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step">
+          <div class="process-number" aria-hidden="true">3</div>
+          <div class="process-content">
+            <h3>Execução e Entrega Técnica</h3>
+            <p>Modelagem estrutural ou redação pericial sob rígidos critérios de qualidade. Emissão de ART (Anotação de Responsabilidade Técnica) no CREA e entrega dos arquivos finais.</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre o Escritório Section -->
+  <section class="about section-padding" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="profile-card">
+          <div class="profile-avatar-placeholder" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <h3>Eng. Gabriel Tay</h3>
+          <span class="profile-title">Responsável Técnico</span>
+          <div>
+            <span class="profile-crea">CREA-SP nº 507XXXXXXX</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-content">
+        <h2>Compromisso com a Engenharia de Ponta</h2>
+        <p class="about-text">Atuamos no desenvolvimento de soluções estruturais e diagnósticos técnicos que aliam rigor acadêmico e viabilidade prática no canteiro de obras. Acreditamos que um bom projeto de engenharia deve gerar economia de materiais sem nunca comprometer a integridade física e jurídica da construção.</p>
+        
+        <ul class="credibility-list">
+          <li class="credibility-item">
+            <div class="credibility-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h4>Registro Ativo no CREA</h4>
+              <p>Segurança técnica garantida por responsável credenciado pelo conselho profissional.</p>
+            </div>
+          </li>
+          <li class="credibility-item">
+            <div class="credibility-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h4>Prazos em Contrato</h4>
+              <p>Garantia real de cumprimento do cronograma acordado, sob penalidades contratuais claras.</p>
+            </div>
+          </li>
+          <li class="credibility-item">
+            <div class="credibility-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h4>Conformidade ABNT</h4>
+              <p>Projetos desenvolvidos sob estrita observância das normas NBR 6118, NBR 16280 e outras.</p>
+            </div>
+          </li>
+          <li class="credibility-item">
+            <div class="credibility-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h4>Atendimento Direto</h4>
+              <p>Comunicação sem intermediários. Você conversa diretamente com quem calcula e assina a sua obra.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <h4>TAY ENGENHARIA LTDA</h4>
+          <p>CNPJ: 00.000.000/0001-00 (Placeholder)</p>
+          <p>CREA Pessoa Jurídica: 20XXXXX-SP (Placeholder)</p>
+          <p>Endereço: Av. Engenharia Civil, nº 1000, Bloco B - São Paulo/SP</p>
+        </div>
+        <div class="footer-nav">
+          <a href="#" class="footer-nav-link" data-open-modal="modal-privacy">Política de Privacidade</a>
+          <a href="#" class="footer-nav-link" data-open-modal="modal-terms">Termos de Uso</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Tay Engenharia. Todos os direitos reservados.</span>
+        <span>Desenvolvimento Seguro &amp; Alta Performance.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Dialog: Privacy Policy -->
+  <div class="modal" id="modal-privacy" role="dialog" aria-modal="true" aria-labelledby="modal-privacy-title">
+    <div class="modal-content">
+      <button class="modal-close js-modal-close" aria-label="Fechar Modal">&times;</button>
+      <h3 id="modal-privacy-title">Política de Privacidade</h3>
+      <div class="modal-text">
+        <p>A sua privacidade é extremamente importante para nós. Esta política explica como coletamos e protegemos seus dados pessoais quando você interage com a nossa landing page institucional.</p>
+        <p><strong>1. Coleta de Dados:</strong> Coletamos apenas as informações enviadas voluntariamente por você ao clicar nos links de redirecionamento para o nosso WhatsApp Corporativo.</p>
+        <p><strong>2. Rastreamento de Campanhas:</strong> Utilizamos parâmetros UTM de marketing na URL do navegador para identificar de qual anúncio ou campanha você veio. Esses dados são purificados de forma segura no seu navegador para evitar vulnerabilidades de injeção de script (XSS) e anexados à sua mensagem de boas-vindas do WhatsApp.</p>
+        <p><strong>3. Armazenamento e Compartilhamento:</strong> Não armazenamos dados de conversas diretamente neste site ou servidor de hospedagem. Suas informações de chat ficam registradas de forma criptografada nos servidores do próprio WhatsApp de acordo com os termos de segurança da Meta Inc.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Dialog: Terms of Use -->
+  <div class="modal" id="modal-terms" role="dialog" aria-modal="true" aria-labelledby="modal-terms-title">
+    <div class="modal-content">
+      <button class="modal-close js-modal-close" aria-label="Fechar Modal">&times;</button>
+      <h3 id="modal-terms-title">Termos de Uso</h3>
+      <div class="modal-text">
+        <p>Bem-vindo à landing page da Tay Engenharia. Ao utilizar este site, você concorda com as seguintes condições de uso:</p>
+        <p><strong>1. Natureza do Conteúdo:</strong> Todas as informações fornecidas neste site possuem caráter puramente informativo e institucional. Nenhuma das informações contidas aqui deve ser interpretada como parecer profissional de engenharia sem a devida contratação formal e assinatura de ART.</p>
+        <p><strong>2. Propriedade Intelectual:</strong> O código-fonte deste site, a marca Tay Engenharia, os elementos de design gráfico, os ícones em formato SVG e os textos autorais são propriedade do escritório e estão protegidos pelas leis vigentes de direitos autorais.</p>
+        <p><strong>3. Links Externos:</strong> Este site contém conexões para plataformas de terceiros, especificamente para serviços de mensageria da empresa WhatsApp. Não controlamos o conteúdo, a disponibilidade técnica e as regras operacionais destas ferramentas.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Template Switcher (Preview Only) -->
+  <div class="template-switcher" aria-label="Seletor de Modelos">
+    <span class="switcher-title">Modelos:</span>
+    <a href="index.html" class="switcher-btn active">Escuro</a>
+    <a href="index-corporate.html" class="switcher-btn">Corporativo</a>
+    <a href="index-technical.html" class="switcher-btn">Blueprint</a>
+  </div>
+
+</body>
+</html>
