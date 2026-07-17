@@ -1,17 +1,19 @@
 /**
- * Site Tay - Civil Engineering Landing Page Logic
+ * TxJ - Projetos e Segurança Contra Incêndio
  * AppSec-by-Design: Dynamic UTM sanitization and secure DOM manipulation.
  */
 
 // --- Global Configuration ---
 const CONFIG = {
-  phone: '5511999999999', // Replace with the actual WhatsApp number (including country/DDD, e.g. 55 for Brazil)
-  defaultMessage: 'Olá! Gostaria de falar com o engenheiro responsável para tirar dúvidas sobre meu projeto.',
+  phone: '5511999999999', // Replace with actual WhatsApp number (country + DDD + number)
+  defaultMessage: 'Olá! Gostaria de falar com um especialista da TxJ sobre segurança contra incêndio para minha empresa.',
   services: {
-    estrutural: 'Projetos Estruturais e Fundações',
-    residencial: 'Projetos Residenciais e Comerciais',
-    laudos: 'Laudos Técnicos e Perícias',
-    regularizacao: 'Regularizações e Reformas'
+    ppci: 'Projetos de Incêndio (PPCI/PSCIP)',
+    instalacao: 'Instalação de Sistemas Contra Incêndio',
+    manutencao: 'Manutenção Preventiva de Sistemas',
+    avcb: 'Laudos e Vistorias (AVCB/CLCB)',
+    brigada: 'Treinamento de Brigada de Incêndio',
+    spda: 'Para-Raios e SPDA'
   }
 };
 
@@ -55,16 +57,15 @@ function getSanitizedUtms() {
 
 /**
  * Generates a safe, fully-encoded WhatsApp link.
- * @param {string} customService - Optional name of the civil engineering service clicked.
+ * @param {string} customService - Optional name of the fire safety service clicked.
  * @returns {string} Sanitized WhatsApp link.
  */
 function buildWhatsAppLink(customService = '') {
   const utms = getSanitizedUtms();
   
-  // Assemble the base text
   let messageText = CONFIG.defaultMessage;
   if (customService) {
-    messageText = `Olá! Gostaria de falar com o engenheiro responsável sobre o serviço de ${customService}.`;
+    messageText = `Olá! Gostaria de falar com um especialista da TxJ sobre: ${customService}.`;
   }
   
   // Build clean marketing campaign metadata footer
@@ -78,73 +79,70 @@ function buildWhatsAppLink(customService = '') {
     messageText += `\n\n[Rastreamento: ${metaList.join(' | ')}]`;
   }
   
-  // URL encode the message body
   const encodedText = encodeURIComponent(messageText);
   return `https://wa.me/${CONFIG.phone}?text=${encodedText}`;
 }
 
 // --- DOM Manipulation & Event Binding ---
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Update all static WhatsApp buttons
+  // 1. Update all WhatsApp buttons
   const whatsAppButtons = document.querySelectorAll('.js-whatsapp-link');
   whatsAppButtons.forEach(button => {
-    // Check if the button has a specific service association
     const serviceKey = button.getAttribute('data-service-key');
     const serviceName = serviceKey ? CONFIG.services[serviceKey] : '';
-    
-    // Set attribute using secure native setAttribute (avoids raw innerHTML interpretation)
     const secureUrl = buildWhatsAppLink(serviceName);
     button.setAttribute('href', secureUrl);
   });
 
   // 2. Modals Control (Privacy Policy & Terms)
   const modalToggle = (modalId, action) => {
-    const modal = document.getElementById(modalId);
-    if (!modal) return;
+    const modalOverlay = document.getElementById(modalId);
+    if (!modalOverlay) return;
     
     if (action === 'open') {
-      modal.classList.add('active');
-      document.body.style.overflow = 'hidden'; // Lock scroll
+      modalOverlay.removeAttribute('hidden');
+      modalOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      // Focus close button for accessibility
+      const closeBtn = modalOverlay.querySelector('.modal-close, [data-close-modal], .js-modal-close');
+      if (closeBtn) closeBtn.focus();
     } else {
-      modal.classList.remove('active');
-      document.body.style.overflow = ''; // Unlock scroll
+      modalOverlay.setAttribute('hidden', '');
+      modalOverlay.classList.remove('active');
+      document.body.style.overflow = '';
     }
   };
 
-  // Bind close buttons for all modals
-  const closeButtons = document.querySelectorAll('.js-modal-close');
-  closeButtons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const modal = e.target.closest('.modal');
-      if (modal) modalToggle(modal.id, 'close');
-    });
-  });
-
-  // Close modal when clicking on the backdrop
-  const modals = document.querySelectorAll('.modal');
-  modals.forEach(modal => {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modalToggle(modal.id, 'close');
-      }
-    });
-  });
-
-  // Escape key closes open modals
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      const openModal = document.querySelector('.modal.active');
-      if (openModal) modalToggle(openModal.id, 'close');
-    }
-  });
-
-  // Global listeners for modal links
-  const modalTriggerLinks = document.querySelectorAll('[data-open-modal]');
-  modalTriggerLinks.forEach(link => {
+  // Bind trigger links (supports both data-open-modal and data-modal)
+  document.querySelectorAll('[data-open-modal], [data-modal]').forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
-      const modalId = link.getAttribute('data-open-modal');
+      const modalId = link.getAttribute('data-open-modal') || link.getAttribute('data-modal');
       modalToggle(modalId, 'open');
     });
+  });
+
+  // Bind close buttons (supports .js-modal-close, [data-close-modal], and .modal-close)
+  const closeSelectors = '.js-modal-close, [data-close-modal], .modal-close';
+  document.querySelectorAll(closeSelectors).forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const modalOverlay = e.target.closest('.modal-overlay');
+      if (modalOverlay) modalToggle(modalOverlay.id, 'close');
+    });
+  });
+
+  // Close modal on backdrop click
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) modalToggle(overlay.id, 'close');
+    });
+  });
+
+  // Escape key closes modals
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      const openModal = document.querySelector('.modal-overlay.active, .modal-overlay:not([hidden])');
+      if (openModal) modalToggle(openModal.id, 'close');
+    }
   });
 });
