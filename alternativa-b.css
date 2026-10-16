@@ -219,3 +219,16 @@
   .concept-b .b-service-top{margin-bottom:18px}
   .concept-b .b-service>a{margin-top:16px}
 }
+
+/* Hero proportions follow the supplied composition sketch. */
+.concept-b .b-safety-illustration{min-height:0;max-height:none;aspect-ratio:600/545}
+@media(min-width:1101px){
+  .concept-b .b-hero-layout{padding-top:clamp(36px,3.4vw,52px);padding-bottom:48px}
+  .concept-b .b-hero-copy{align-self:stretch;display:flex;flex-direction:column;justify-content:space-between}
+  .concept-b .b-hero h1{font-size:clamp(54px,5.3vw,76px);line-height:1.03;margin-top:24px;margin-bottom:26px}
+  .concept-b .b-hero-description{max-width:540px;font-size:18px;line-height:1.8}
+  .concept-b .b-hero-actions{margin-top:28px;gap:28px}
+  body.concept-b .b-hero a.wa-cta{width:280px;min-height:64px;padding:18px 24px;font-size:15px}
+  .concept-b .b-hero .b-text-link{font-size:16px;min-height:56px;gap:20px}
+  .concept-b .b-hero-footnote{font-size:16px;line-height:1.75;margin-top:26px}
+}
