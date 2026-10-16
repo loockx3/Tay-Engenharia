@@ -100,13 +100,20 @@
     }));
     show(0, false);
     $$('button[disabled]', section).forEach(button => { button.disabled = false; });
-    // The inline contact remains available while the floating shortcut stays off the answers.
+    // Keep the questionnaire and the compact audience/location strip unobstructed.
     const floating = $('.wa-floating');
     if (floating && 'IntersectionObserver' in window) {
+      const visibleSections = new Set();
       const observer = new IntersectionObserver(entries => {
-        floating.hidden = entries[0].isIntersecting && document.activeElement !== floating;
+        for (const entry of entries) {
+          if (entry.isIntersecting) visibleSections.add(entry.target);
+          else visibleSections.delete(entry.target);
+        }
+        floating.hidden = visibleSections.size > 0 && document.activeElement !== floating;
       });
       observer.observe($('#quiz-box', section));
+      const audiences = $('.b-audiences');
+      if (audiences) observer.observe(audiences);
     }
   }
 
