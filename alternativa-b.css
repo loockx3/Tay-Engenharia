@@ -167,3 +167,55 @@
 .concept-b .b-diagnostic-action{width:100%;max-width:300px;min-width:0}
 .concept-b .b-diagnostic .b-button-navy{width:100%;min-width:0;max-width:none;min-height:64px;padding:20px 26px;font-size:14px}
 @media(max-width:650px){.concept-b .b-diagnostic-action{max-width:340px}.concept-b .b-diagnostic .b-button-navy{min-height:60px;font-size:13px;padding:18px 22px}}
+
+/* Consistent reading sizes, aligned hero columns and a larger footer signature. */
+.concept-b{--b-text-small:12px;--b-text-secondary:14px;--b-text-body:16px}
+.concept-b .b-hero-layout{align-items:start}
+.concept-b .b-hero-copy{padding-top:2px;min-width:0}
+.concept-b .b-drawing{justify-content:flex-start}
+.concept-b .b-hero h1{font-size:clamp(42px,4.8vw,68px);line-height:1.06;margin-top:26px;overflow-wrap:anywhere}
+.concept-b .b-hero-description{font-size:var(--b-text-body);max-width:480px}
+.concept-b .b-eyebrow,.concept-b .b-step-caption,.concept-b .b-service-top>span{font-size:var(--b-text-small);letter-spacing:.1em}
+.concept-b .b-hero-footnote{font-size:var(--b-text-secondary);line-height:1.75;color:#b3c0c9}
+.concept-b .b-hero-bottom{font-size:var(--b-text-small);letter-spacing:.08em;color:#b3c0c9}
+.concept-b .b-hero-bottom a{font-size:var(--b-text-secondary)}
+.concept-b .b-audiences-inner p{font-size:var(--b-text-small);max-width:130px}
+.concept-b .b-audiences-inner .b-audience-location{font-size:var(--b-text-small);max-width:180px}
+.concept-b .b-service>p,.concept-b .b-process-list p,.concept-b .b-other-services ul{font-size:var(--b-text-secondary);line-height:1.8}
+.concept-b .b-service>a,.concept-b .b-text-link,.concept-b .b-process-note a{font-size:var(--b-text-secondary);min-height:44px;align-items:center}
+.concept-b .b-other-services h3,.concept-b .b-process-note p{font-size:var(--b-text-secondary)}
+.concept-b .b-section-intro>div>p,.concept-b .b-contact-copy>p,.concept-b .b-faq-layout>div>p:not(.b-eyebrow){font-size:var(--b-text-body)}
+.concept-b .b-faq-list details>p,.concept-b .b-diagnostic p:not(.b-eyebrow){font-size:var(--b-text-secondary)}
+.concept-b .b-diagnostic .b-eyebrow,.concept-b .b-diagnostic-action>span:last-child,.concept-b .b-contact-region{font-size:var(--b-text-small)}
+.concept-b .b-drawing-heading{font-size:10px;gap:16px;letter-spacing:.1em}
+.concept-b .b-safety-legend{font-size:var(--b-text-small)}
+.concept-b .b-safety-note{font-size:var(--b-text-small);line-height:1.7}
+.concept-b .b-footer-top .b-logo{width:210px;height:140px}
+.concept-b .b-footer-top .b-logo img{width:264px;height:176px;transform:translate(-26px,0)}
+.concept-b .b-footer-profile p{font-size:var(--b-text-secondary)}
+.concept-b .b-footer-profile .b-footer-name a{font-size:18px}
+.concept-b .b-footer-name>span,.concept-b .b-footer-bottom{font-size:var(--b-text-small)}
+.concept-b .b-footer-top>a:last-child{font-size:var(--b-text-secondary);min-height:44px}
+@media(max-width:900px){.concept-b .b-footer-top{flex-wrap:wrap;gap:28px 40px}.concept-b .b-footer-profile{flex:1;min-width:220px}.concept-b .b-footer-top>a:last-child{flex-basis:100%;margin-left:0}}
+@media(max-width:650px){
+  .concept-b .b-hero h1{font-size:clamp(36px,10.6vw,48px);margin-top:24px;line-height:1.08}
+  .concept-b .b-hero-description{font-size:15px}
+  .concept-b .b-hero .b-text-link{font-size:var(--b-text-secondary)}
+  .concept-b .b-hero-footnote{margin-top:24px}
+  .concept-b .b-hero-bottom{align-items:flex-start;flex-wrap:wrap;gap:8px 20px}
+  .concept-b .b-hero-bottom>span{font-size:var(--b-text-small);letter-spacing:.06em;flex:1 1 210px}
+  .concept-b .b-hero-bottom a{font-size:var(--b-text-small);min-height:32px}
+  .concept-b .b-audiences-inner p{max-width:none}
+  .concept-b .b-drawing-heading{font-size:10px;letter-spacing:.04em;gap:12px}
+  .concept-b .b-footer-profile{flex-basis:100%;min-width:0}
+  .concept-b .b-footer-top .b-logo{width:180px;height:120px}
+  .concept-b .b-footer-top .b-logo img{width:228px;height:152px;transform:translate(-23px,0)}
+}
+@media(max-width:480px){
+  .concept-b .b-service-grid{grid-template-columns:1fr}
+  .concept-b .b-service:nth-child(n){padding:24px 0;border-right:0;border-top:1px solid #c6cac5}
+  .concept-b .b-service:first-child{border-top:0}
+  .concept-b .b-service h3{font-size:24px;min-height:0;margin-bottom:16px}
+  .concept-b .b-service-top{margin-bottom:18px}
+  .concept-b .b-service>a{margin-top:16px}
+}

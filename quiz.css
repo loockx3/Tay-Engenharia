@@ -66,3 +66,11 @@
 @media(max-width:760px){.homepage-quiz{padding-block:65px}.homepage-quiz-inner{grid-template-columns:1fr;gap:32px}.homepage-quiz-intro{max-width:560px}.homepage-quiz .quiz-intro-description,.homepage-quiz .quiz-disclaimer{max-width:480px}.homepage-quiz .quiz-eyebrow{margin-bottom:21px}.homepage-quiz .quiz-topics{grid-template-columns:1fr 1fr}.homepage-quiz .quiz-card{padding:28px}.homepage-quiz .quiz-header-title{max-width:none}}
 @media(max-width:480px){.homepage-quiz{padding-block:52px}.homepage-quiz-inner{width:calc(100% - 36px)}.homepage-quiz #quiz-section-title{font-size:38px}.homepage-quiz .quiz-intro-description{font-size:13px}.homepage-quiz .quiz-topics{column-gap:14px;font-size:10px}.homepage-quiz .quiz-topics li{gap:7px}.homepage-quiz .quiz-card{padding:21px 17px}.homepage-quiz .quiz-header{gap:12px}.homepage-quiz .quiz-header-title{font-size:10px;max-width:140px}.homepage-quiz .quiz-step-indicator{font-size:9px;padding:6px}.homepage-quiz .quiz-question-title{font-size:23px}.homepage-quiz .quiz-opt-btn{padding:13px 12px;font-size:11px;gap:10px}.homepage-quiz .quiz-nav-row button{font-size:10px}.homepage-quiz .summary-list li{grid-template-columns:1fr;gap:4px}.homepage-quiz #btn-quiz-wa-submit{font-size:11px;padding-inline:10px}}
 @media(prefers-reduced-motion:reduce){.homepage-quiz .quiz-progress-fill,.homepage-quiz .quiz-opt-btn{transition:none}}
+
+/* Match the homepage's minimum reading sizes on desktop and mobile. */
+.homepage-quiz .quiz-eyebrow,.homepage-quiz .quiz-intro-meta,.homepage-quiz .quiz-topics span,.homepage-quiz .quiz-header-title,.homepage-quiz .quiz-step-indicator,.homepage-quiz .result-badge-label{font-size:12px}
+.homepage-quiz .quiz-intro-description{font-size:16px}
+.homepage-quiz .quiz-topics,.homepage-quiz .quiz-opt-btn,.homepage-quiz .quiz-nav-row button,.homepage-quiz .summary-title,.homepage-quiz .summary-list li{font-size:14px}
+.homepage-quiz .quiz-disclaimer,.homepage-quiz .quiz-auto-advance,.homepage-quiz .result-status-card>p,.homepage-quiz .privacy-note{font-size:13px}
+.homepage-quiz #btn-quiz-wa-submit{font-size:14px}
+@media(max-width:480px){.homepage-quiz .quiz-intro-description{font-size:15px}.homepage-quiz .quiz-header-title{max-width:140px}.homepage-quiz .quiz-header{gap:10px}}
