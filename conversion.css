@@ -1,0 +1,19 @@
+/* Shared contact identity: the WhatsApp channel has visual priority in both concepts. */
+body.concept-a a.wa-cta,body.concept-b a.wa-cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:54px;padding:15px 21px;border:1px solid #087b43;border-radius:4px;background:#087b43;color:#fff;text-decoration:none;font:600 13px/1.5 Inter,Arial,sans-serif;letter-spacing:0;box-shadow:0 5px 16px #087b431c;transition:background .18s,box-shadow .18s;transform:none}
+body.concept-a a.wa-cta:hover,body.concept-b a.wa-cta:hover{background:#066437;border-color:#066437;color:#fff;text-decoration:none;box-shadow:0 7px 22px #087b4333}
+body.concept-a a.wa-cta:focus-visible,body.concept-b a.wa-cta:focus-visible{outline:3px solid #087b43;outline-offset:5px;box-shadow:0 0 0 3px #fff}
+body.concept-a a.wa-cta .wa-icon,body.concept-b a.wa-cta .wa-icon{display:block;width:23px;height:23px;flex:0 0 23px;object-fit:contain}
+body.concept-a a.wa-cta .wa-label,body.concept-b a.wa-cta .wa-label{font:inherit;line-height:1.5;min-width:0}
+body.concept-a a.wa-cta .wa-arrow,body.concept-b a.wa-cta .wa-arrow{font:400 19px/1 Inter,Arial,sans-serif;margin-left:5px}
+body.concept-a .a-header a.wa-cta,body.concept-b .b-header a.wa-cta{min-height:45px;padding:11px 16px;font-size:12px;gap:10px}
+body.concept-b a.wa-cta{background:#25d366;border-color:#25d366;color:#082e1a;box-shadow:0 5px 18px #0002}
+body.concept-b a.wa-cta .wa-icon{filter:brightness(0) saturate(100%)}
+body.concept-b a.wa-cta:hover{background:#43e47f;border-color:#43e47f;color:#082e1a}
+body.concept-b a.wa-cta:focus-visible{outline-color:#25d366}
+body.concept-a a.wa-floating,body.concept-b a.wa-floating{position:fixed;z-index:35;right:24px;bottom:24px;min-height:54px;padding:14px 20px;border-radius:30px;gap:11px;box-shadow:0 6px 24px #031a2433;border:2px solid #ffffffd9}
+body.concept-a .a-footer,body.concept-b .b-footer{padding-bottom:95px}
+body.concept-a .a-text-button,body.concept-b .b-diagnostic-link{text-decoration:none}
+body.concept-a #diagnostico,body.concept-b #diagnostico{scroll-margin-top:30px}
+@media(max-width:1100px){body.concept-a .a-header nav,body.concept-b .b-nav{gap:24px}body.concept-a .a-header .a-nav-contact{margin-left:0}}
+@media(max-width:800px){body.concept-b .b-nav{gap:13px}body.concept-b .b-header a.wa-cta{font-size:11px;padding-inline:12px}}
+@media(max-width:650px){body.concept-a a.wa-cta,body.concept-b a.wa-cta{max-width:100%;font-size:12px;gap:11px;padding:14px 17px;min-height:54px}body.concept-a a.wa-floating,body.concept-b a.wa-floating{width:56px;height:56px;min-height:56px;padding:13px;right:16px;bottom:max(16px,env(safe-area-inset-bottom));border-radius:50%}body.concept-a a.wa-floating .wa-label,body.concept-b a.wa-floating .wa-label{display:none}body.concept-a a.wa-floating .wa-icon,body.concept-b a.wa-floating .wa-icon{width:26px;height:26px;flex-basis:26px}body.concept-a .a-header a.wa-cta,body.concept-b .b-header a.wa-cta{justify-content:center;min-height:48px}html{scroll-padding-bottom:92px}a,button,summary{scroll-margin-bottom:92px}}
