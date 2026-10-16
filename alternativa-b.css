@@ -232,3 +232,8 @@
   .concept-b .b-hero .b-text-link{font-size:16px;min-height:56px;gap:20px}
   .concept-b .b-hero-footnote{font-size:16px;line-height:1.75;margin-top:26px}
 }
+
+.concept-b .b-audiences-inner p{max-width:none;white-space:nowrap;flex-shrink:0}
+.concept-b .b-audiences-inner .b-audience-location{max-width:none;white-space:nowrap;flex-shrink:0}
+.concept-b #services-title{white-space:nowrap;font-size:clamp(28px,3.55vw,51px)}
+@media(max-width:650px){.concept-b #services-title{font-size:clamp(22px,6.7vw,36px)}}
