@@ -237,3 +237,8 @@
 .concept-b .b-audiences-inner .b-audience-location{max-width:none;white-space:nowrap;flex-shrink:0}
 .concept-b #services-title{white-space:nowrap;font-size:clamp(28px,3.55vw,51px)}
 @media(max-width:650px){.concept-b #services-title{font-size:clamp(22px,6.7vw,36px)}}
+
+/* Match the breathing room before and after the audience strip. */
+.concept-b .b-hero-layout{padding-bottom:100px}
+@media(max-width:760px){.concept-b .b-hero-layout{padding-bottom:65px}}
+@media(max-width:480px){.concept-b .b-hero-layout{padding-bottom:52px}}
