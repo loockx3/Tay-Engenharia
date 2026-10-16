@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://loockx3.github.io/Tay-Engenharia/sitemap.xml

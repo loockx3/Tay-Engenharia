@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="630" viewBox="0 0 600 630" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Segurança contra incêndio e regularização no CBMERJ</title>
+  <desc id="desc">Ilustração conceitual de um edifício em corte com tubulação vermelha, sprinklers, hidrante, extintor e saída sinalizada. Ao lado, uma prancha reúne projeto e documentação para o processo de regularização no CBMERJ. Não representa um projeto executivo ou um certificado concedido.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#7b96a3" stroke-width=".45" opacity=".14"/></pattern>
+    <pattern id="slab" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><path d="M0 0V6" stroke="#607888" stroke-width=".5"/></pattern>
+  </defs>
+  <path d="M0 0h600v630H0z" fill="url(#grid)"/>
+  <!-- A restrained drafting ground anchors the cutaway, without competing with its systems. -->
+  <g stroke="#58717f" stroke-width=".7" opacity=".4">
+    <path d="m20 442 277 160 281-162M20 478l241 139 316-182M48 407l283 163 240-139"/>
+    <path d="m40 536 281-162M92 566l281-162m-229 192 281-162"/>
+    <path d="M40 58v26M27 71h26M547 592v20m-10-10h20"/>
+  </g>
+  <!-- Three occupied levels, shown as an explanatory cutaway. -->
+  <path d="m68 429 143-83 222 128v19l-144 83L68 448z" fill="#122c3b" stroke="#78909c"/>
+  <path d="m68 429 221 128 144-83-222-128z" fill="url(#slab)" stroke="#8fa1a9"/>
+  <path d="m91 185 129-75 189 109v255l-129 75L91 440z" fill="#132c3b" stroke="#bcc5c5" stroke-width="1.3"/>
+  <path d="m220 110 189 109v255L220 365z" fill="#102632"/>
+  <path d="m91 185 129-75v255L91 440z" fill="#1c3442"/>
+  <!-- Floor plates and back walls are secondary to the red protection network. -->
+  <path d="m91 355 129-75 189 109v10l-129 75L91 365z" fill="#28414e" stroke="#8196a1"/>
+  <path d="m91 355 189 109 129-75-189-109z" fill="#193440" stroke="#8a9da5"/>
+  <path d="m91 270 129-75 189 109v10l-129 75L91 280z" fill="#28414e" stroke="#8196a1"/>
+  <path d="m91 270 189 109 129-75-189-109z" fill="#193440" stroke="#8a9da5"/>
+  <g stroke="#6d8491" stroke-width=".7" opacity=".55">
+    <path d="m111 280 129-75m-85 100 129-75m-85 100 129-75m-85 100 129-75"/>
+    <path d="m111 365 129-75m-85 100 129-75m-85 100 129-75m-85 100 129-75"/>
+    <path d="m111 450 129-75m-85 100 129-75m-85 100 129-75m-85 100 129-75"/>
+  </g>
+  <!-- Main supply and the two visible sprinkler branches. -->
+  <g stroke="#ed8c7c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M119 202v249l158 91"/>
+    <path d="m119 218 143 82 109-63M119 303l143 82 109-63"/>
+  </g>
+  <g fill="#142b38" stroke="#ed8c7c" stroke-width="2">
+    <circle cx="119" cy="303" r="5"/><circle cx="119" cy="218" r="5"/>
+    <path d="M162 243v13m-7 1h14m-10 4h6M230 282v13m-7 1h14m-10 4h6M329 261v13m-7 1h14m-10 4h6"/>
+    <path d="M162 328v13m-7 1h14m-10 4h6M230 367v13m-7 1h14m-10 4h6M329 346v13m-7 1h14m-10 4h6"/>
+  </g>
+  <!-- Hidrante cabinet with a visible hose reel. -->
+  <g transform="translate(136 374)">
+    <path d="m0 0 36 21v49L0 49z" fill="#743e3b" stroke="#f09b88" stroke-width="1.5"/>
+    <path d="m5 10 26 15v34L5 44z" fill="#182f3b" stroke="#ed8c7c"/>
+    <ellipse cx="18" cy="34" rx="8" ry="11" transform="rotate(-27 18 34)" stroke="#f0a18b" stroke-width="2"/>
+    <path d="m19 40 7 4v10m-2-2 4 2" stroke="#f0a18b" stroke-width="2"/>
+  </g>
+  <!-- Recognizable extinguisher, kept larger than a literal scale would require. -->
+  <g transform="translate(201 426)">
+    <path d="M0 8c0-5 6-8 11-5l5 3v40c0 8-16 1-16-6z" fill="#c66658" stroke="#ffd0b8" stroke-width="1.1"/>
+    <path d="M5 4V-4l10 6M6-4l12-2 4 6m-7 2 10 9v20" stroke="#ffd0b8" stroke-width="2" stroke-linejoin="round"/>
+    <path d="m0 21 16 9v12L0 33z" fill="#f1e5d7"/>
+  </g>
+  <!-- Small alarm and detector complete the prevention / protection context. -->
+  <path d="m176 239 16 9v17l-16-9z" fill="#b45d52" stroke="#efae99"/>
+  <circle cx="184" cy="252" r="3" fill="#f7e8cf"/>
+  <ellipse cx="281" cy="266" rx="9" ry="5" fill="#d5d6c7" stroke="#f3f0e8"/>
+  <path d="m277 268 8 0" stroke="#4f6470"/>
+  <!-- Structural frame / roof, drawn last so the cutaway reads clearly. -->
+  <g stroke="#b6c1c4" stroke-width="1.3">
+    <path d="M91 185v255m189-146v255m129-330v255"/>
+    <path d="m91 185 189 109 129-75-189-109z" fill="#223c49"/>
+    <path d="m106 184 114-66 173 100-113 66z" fill="#102632" stroke="#7b919c"/>
+    <path d="m91 185 0 9 189 109 129-75v-9m-129 75v9"/>
+  </g>
+  <!-- Exit sign and an outward route, never a fire or a promise of approval. -->
+  <g transform="translate(297 445)">
+    <path d="m0 0 44-25v53L0 53z" fill="#132d38" stroke="#83bba5"/>
+    <path d="m4-10 36-21v17L4 7z" fill="#436b5b" stroke="#acd3b7"/>
+    <path d="m12-6 20-12m-4-3 5 3-4 8" stroke="#f1f0df" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="m9 11 25-15v33L9 44" stroke="#9ec9ae"/>
+  </g>
+  <path d="m316 495-36 21-110-63-51 29" stroke="#9bc6a7" stroke-width="2.5" stroke-dasharray="8 6" stroke-linecap="round"/>
+  <path d="m126 470-9 13 17-1" stroke="#9bc6a7" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Red callout: concrete protection measures, not generic structure. -->
+  <path d="M162 256 63 199H25" stroke="#ed9a87" stroke-width="1"/>
+  <circle cx="162" cy="256" r="3" fill="#ed9a87"/>
+  <g font-family="Arial,sans-serif" fill="#efb6a4">
+    <text x="25" y="170" font-size="12" letter-spacing="1">SISTEMAS</text>
+    <text x="25" y="187" font-size="12" letter-spacing="1">DE PROTEÇÃO</text>
+  </g>
+  <!-- Document flow is visibly connected to the building. -->
+  <path d="M312 378h52l27-16" stroke="#dcba70" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <circle cx="312" cy="378" r="4" fill="#dcba70"/>
+  <!-- A project folder, deliberately without official marks, approval stamps or signatures. -->
+  <path d="M391 329h149l24 24v218H391z" fill="#091a26" opacity=".7"/>
+  <path d="M380 317h150l24 24v218H380z" fill="#eae6d9" stroke="#dcba70" stroke-width="1.3"/>
+  <path d="M530 317v24h24" fill="#d4c5a4" stroke="#b89b60"/>
+  <rect x="424" y="309" width="79" height="15" rx="2" fill="#dcba70" stroke="#a88645"/>
+  <g font-family="Arial,sans-serif" fill="#183342">
+    <text x="396" y="352" font-size="9.5" letter-spacing="1.1">REGULARIZAÇÃO</text>
+    <text x="396" y="381" font-size="25" font-weight="700" letter-spacing=".5">CBMERJ</text>
+    <text x="396" y="400" font-size="9.5" letter-spacing=".2">Projeto e documentação</text>
+  </g>
+  <!-- Floor-plan thumbnail links paperwork to the real building. -->
+  <g stroke="#59717a" stroke-width="1.1">
+    <path d="M396 415h141v62H396z" fill="#dfdfd3"/>
+    <path d="M440 415v20m0 11v31m44-62v62m-88-34h22m11 0h11m44-5h53m-53 21h21m11 0h21"/>
+    <path d="M440 435h11m-11 0a11 11 0 0 1 11 11" stroke-width=".7"/>
+  </g>
+  <path d="M401 422h31v48m16-48h29m14 0h38v10" stroke="#b66653" stroke-width="2"/>
+  <g stroke="#7f6a42" stroke-width="1.1">
+    <rect x="398" y="493" width="8" height="8"/><rect x="398" y="515" width="8" height="8"/><rect x="398" y="537" width="8" height="8"/>
+  </g>
+  <g font-family="Arial,sans-serif" fill="#29444d" font-size="11">
+    <text x="415" y="501">Análise do imóvel</text>
+    <text x="415" y="523">Projeto técnico</text>
+    <text x="415" y="545">Acompanhamento</text>
+  </g>
+  <path d="m119 482-48 28v39" stroke="#9bc6a7" stroke-width="1"/>
+  <g font-family="Arial,sans-serif" fill="#b1d3b7" font-size="12" letter-spacing="1">
+    <text x="26" y="569">ROTAS DE FUGA</text>
+  </g>
+</svg>

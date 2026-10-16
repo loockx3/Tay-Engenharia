@@ -1,4 +1,4 @@
-/* The existing TxJ questionnaire, styled for both local homepage directions. */
+/* The existing TxJ questionnaire, styled for the approved homepage. */
 .homepage-quiz{--quiz-ink:#17353b;--quiz-muted:#526462;--quiz-accent:#456555;--quiz-border:#b9c9bd;--quiz-soft:#eff3eb;background:#e4ebdf;color:var(--quiz-ink);padding-block:100px;scroll-margin-top:24px}
 .homepage-quiz-inner{width:calc(100% - 112px);max-width:1320px;margin-inline:auto;display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:clamp(40px,6vw,96px);align-items:center}
 .homepage-quiz-intro{max-width:440px}

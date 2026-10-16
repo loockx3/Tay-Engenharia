@@ -1,16 +1,386 @@
 <!doctype html>
 <html lang="pt-BR">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>TxJ Engenharia · Duas direções para a homepage</title><meta name="description" content="Compare duas propostas visuais navegáveis para a nova homepage da TxJ Engenharia."><link rel="stylesheet" href="base.css"><link rel="stylesheet" href="propostas.css"></head>
-<body class="proposals">
-  <header class="proposal-header"><a href="index.html" aria-label="TxJ Engenharia — propostas"><img src="assets/logo-escura.webp" width="600" height="400" alt="TxJ Engenharia"></a><span>ESTUDO VISUAL / HOMEPAGE</span><span>OUTUBRO 2026</span></header>
-  <main class="proposal-main">
-    <div class="proposal-intro"><div><p class="proposal-eyebrow">DUAS DIREÇÕES. UMA MESMA ESSÊNCIA.</p><h1>Qual TxJ você<br>quer apresentar?</h1></div><div><p>Duas formas de comunicar competência técnica, segurança e clareza. Explore as homepages completas e escolha a direção para a próxima etapa.</p><span>Prévias locais · Desktop e celular · Sem publicação</span></div></div>
-    <div class="proposal-grid">
-      <article class="proposal-card"><a href="alternativa-a.html" class="proposal-image" aria-label="Explorar alternativa A: Clareza essencial"><img src="screenshots/a-desktop.png" width="1440" height="1000" alt="Prévia da alternativa A com fundo claro, tipografia escura e fotografia de arquitetura"></a><div class="proposal-card-content"><div class="proposal-card-title"><span class="proposal-letter">A</span><h2>Clareza essencial</h2><div class="swatches swatches-a" role="img" aria-label="Paleta: marfim, azul profundo e verde oliva"><i></i><i></i><i></i></div></div><p>Clara, editorial e próxima. A arquitetura ganha espaço, com leitura tranquila e um caminho direto para o atendimento.</p><div class="proposal-tags"><span>Fundo claro</span><span>Fotografia</span><span>Tom consultivo</span></div><div class="proposal-links"><a class="proposal-explore" href="alternativa-a.html">Explorar proposta A <span aria-hidden="true">↗</span></a><a href="screenshots/a-mobile.png">Ver captura mobile ↗</a></div></div></article>
-      <article class="proposal-card"><a href="alternativa-b.html" class="proposal-image" aria-label="Explorar alternativa B: Precisão técnica"><img src="screenshots/b-desktop.png" width="1440" height="1000" alt="Prévia da alternativa B com azul-marinho, dourado e desenho técnico de edifício"></a><div class="proposal-card-content"><div class="proposal-card-title"><span class="proposal-letter">B</span><h2>Precisão técnica</h2><div class="swatches swatches-b" role="img" aria-label="Paleta: azul-marinho, dourado e marfim"><i></i><i></i><i></i></div></div><p>Institucional, expressiva e técnica. O desenho arquitetônico e o contraste profundo destacam o universo da engenharia.</p><div class="proposal-tags"><span>Azul-marinho</span><span>Desenho técnico</span><span>Tom institucional</span></div><div class="proposal-links"><a class="proposal-explore" href="alternativa-b.html">Explorar proposta B <span aria-hidden="true">↗</span></a><a href="screenshots/b-mobile.png">Ver captura mobile ↗</a></div></div></article>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <title>TxJ Engenharia | Segurança contra incêndio e regularização CBMERJ</title>
+  <meta name="description" content="TxJ Engenharia: regularização CBMERJ, projetos de incêndio e acompanhamento técnico no Rio de Janeiro.">
+  <meta name="theme-color" content="#0c1c2b">
+  <link rel="preload" href="assets/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="alternativa-b.css">
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="conversion.css">
+  <script src="interactions.js" defer></script>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-Fi/RhvUF1dTmfF0SG0KO4uFcPfLOG9lQZgmAGXgcAiw='; script-src-attr 'none'; style-src 'self'; style-src-attr 'none'; img-src 'self'; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <link rel="canonical" href="https://loockx3.github.io/Tay-Engenharia/">
+  <link rel="icon" href="/Tay-Engenharia/assets/icon-192.png" type="image/png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="TxJ Engenharia">
+  <meta property="og:title" content="Regularização CBMERJ no RJ | TxJ Engenharia">
+  <meta property="og:description" content="Projetos de segurança contra incêndio e acompanhamento da regularização no CBMERJ. Atendimento em todo o estado do Rio de Janeiro.">
+  <meta property="og:url" content="https://loockx3.github.io/Tay-Engenharia/">
+  <meta property="og:image" content="https://loockx3.github.io/Tay-Engenharia/assets/og-txj.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TxJ Engenharia — segurança contra incêndio no Rio de Janeiro">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://loockx3.github.io/Tay-Engenharia/assets/og-txj.jpg">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loockx3.github.io/Tay-Engenharia/#organization",
+      "name": "TxJ Engenharia",
+      "url": "https://loockx3.github.io/Tay-Engenharia/",
+      "logo": "https://loockx3.github.io/Tay-Engenharia/assets/logo-clara.webp",
+      "telephone": "+5521991326294",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Estado do Rio de Janeiro"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://loockx3.github.io/Tay-Engenharia/#responsavel",
+      "name": "Tahiane Santos",
+      "jobTitle": [
+        "Engenheira Civil",
+        "Engenheira de Segurança do Trabalho"
+      ],
+      "affiliation": {
+        "@id": "https://loockx3.github.io/Tay-Engenharia/#organization"
+      },
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "name": "CREA",
+          "value": "2020103497"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "CBMERJ",
+          "value": "01-601"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loockx3.github.io/Tay-Engenharia/#website",
+      "url": "https://loockx3.github.io/Tay-Engenharia/",
+      "name": "TxJ Engenharia",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://loockx3.github.io/Tay-Engenharia/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://loockx3.github.io/Tay-Engenharia/",
+      "url": "https://loockx3.github.io/Tay-Engenharia/",
+      "name": "TxJ Engenharia | Segurança contra incêndio e regularização CBMERJ",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@id": "https://loockx3.github.io/Tay-Engenharia/#website"
+      },
+      "about": {
+        "@id": "https://loockx3.github.io/Tay-Engenharia/#organization"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://loockx3.github.io/Tay-Engenharia/#projeto-incendio",
+      "name": "Projeto de incêndio",
+      "provider": {
+        "@id": "https://loockx3.github.io/Tay-Engenharia/#organization"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Estado do Rio de Janeiro"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://loockx3.github.io/Tay-Engenharia/#laudo-exigencias",
+      "name": "Laudo de Exigências",
+      "provider": {
+        "@id": "https://loockx3.github.io/Tay-Engenharia/#organization"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Estado do Rio de Janeiro"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://loockx3.github.io/Tay-Engenharia/#adequacao-projeto",
+      "name": "Adequação ao projeto aprovado",
+      "provider": {
+        "@id": "https://loockx3.github.io/Tay-Engenharia/#organization"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Estado do Rio de Janeiro"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://loockx3.github.io/Tay-Engenharia/#certificado-aprovacao",
+      "name": "Certificado de Aprovação",
+      "provider": {
+        "@id": "https://loockx3.github.io/Tay-Engenharia/#organization"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Estado do Rio de Janeiro"
+      }
+    }
+  ]
+}</script>
+</head>
+<body class="concept-b">
+  <a class="b-skip" href="#conteudo">Ir para o conteúdo</a>
+  <header class="b-header">
+    <div class="b-wrap b-header-inner">
+      <a class="b-logo" href="#inicio" aria-label="TxJ Engenharia — início"><img src="assets/logo-clara.webp" width="201" height="64" alt="TxJ Engenharia"></a>
+      <button class="b-menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav"><span>Menu</span><span class="b-menu-lines" aria-hidden="true"></span></button>
+      <nav id="site-nav" class="b-nav" aria-label="Navegação principal">
+        <a href="#servicos">Atuação</a>
+        <a href="#diagnostico" data-diagnostic>Diagnóstico</a><a href="#processo">Como trabalhamos</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a class="b-nav-contact wa-cta" href="https://wa.me/5521991326294" target="_blank" rel="noopener noreferrer"><img class="wa-icon" src="assets/whatsapp.svg" width="23" height="23" alt="" aria-hidden="true"><span class="wa-label">WhatsApp</span><span class="wa-arrow" aria-hidden="true">↗</span></a>
+      </nav>
     </div>
-    <section class="proposal-bottom" aria-labelledby="next-title"><div><p class="proposal-eyebrow">O QUE VOCÊ JÁ PODE EXPERIMENTAR</p><p>WhatsApp em destaque com ícone, atalho flutuante, menu mobile e o quiz original de quatro etapas, agora visível na página. Os botões de WhatsApp abrem o canal comercial existente; nada é enviado automaticamente.</p></div><div><h2 id="next-title">Primeiro a direção.<br>Depois, o restante do site.</h2><p>Informe no chat sua preferência por A ou B e os detalhes que gostaria de combinar. A arquitetura atual continua preservada.</p></div></section>
-  </main>
-  <footer class="proposal-footer"><span>TxJ Engenharia / Estudos de direção visual</span><span>Fotografia e ilustração de referência. Sem casos ou credenciais fictícios.</span></footer>
-</body></html>
+  </header>
 
+  <main id="conteudo">
+    <section class="b-hero" id="inicio" aria-labelledby="hero-title">
+      <div class="b-wrap b-hero-layout">
+        <div class="b-hero-copy">
+          <p class="b-eyebrow"><span class="b-cross" aria-hidden="true">+</span> Segurança contra incêndio</p>
+          <h1 id="hero-title">Regularização <span>CBMERJ</span> no Rio de Janeiro.</h1>
+          <p class="b-hero-description">Projetos de segurança contra incêndio, orientação para adequações e acompanhamento da regularização do seu imóvel no CBMERJ.</p>
+          <div class="b-hero-actions">
+            <a class="b-button b-button-gold wa-cta" href="https://wa.me/5521991326294" target="_blank" rel="noopener noreferrer"><img class="wa-icon" src="assets/whatsapp.svg" width="23" height="23" alt="" aria-hidden="true"><span class="wa-label">Falar pelo WhatsApp</span><span class="wa-arrow" aria-hidden="true">↗</span></a>
+            <a class="b-text-link b-diagnostic-link" data-diagnostic href="#diagnostico">Iniciar diagnóstico <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="b-hero-footnote">Prevenção, proteção e orientação técnica.<br>Do projeto à documentação.</p>
+        </div>
+        <figure class="b-drawing">
+          <div class="b-drawing-heading"><span>SEGURANÇA CONTRA INCÊNDIO</span><span>REGULARIZAÇÃO / RJ</span></div>
+          <img class="b-building b-safety-illustration" src="assets/seguranca-incendio-cbmerj.svg" width="600" height="630" alt="Edifício em corte com sprinklers, hidrante, extintor e saída sinalizada, conectado a uma prancha de projeto e documentação para regularização no CBMERJ." fetchpriority="high">
+          <figcaption class="b-safety-caption"><span class="b-safety-legend"><span><i class="b-key-protection" aria-hidden="true"></i>Proteção contra incêndio</span><span><i class="b-key-documents" aria-hidden="true"></i>Regularização CBMERJ</span></span><span class="b-safety-note">Ilustração conceitual · sistemas de proteção e documentação.</span></figcaption>
+        </figure>
+      </div>
+      <div class="b-wrap b-hero-bottom"><span>PROJETOS. DOCUMENTAÇÃO. ACOMPANHAMENTO.</span><a href="#servicos">Explore <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="b-audiences" aria-label="Perfis de imóveis atendidos">
+      <div class="b-wrap b-audiences-inner"><p>Cada uso, uma análise.</p><span>Condomínios</span><span>Comércios</span><span>Indústrias</span><span class="b-audience-location">Estado do Rio de Janeiro <span aria-hidden="true">↗</span></span></div>
+    </section>
+
+    <!-- shared-quiz:start -->
+<section class="homepage-quiz" id="diagnostico" aria-labelledby="quiz-section-title">
+      <div class="homepage-quiz-inner">
+        <div class="homepage-quiz-intro">
+          <p class="quiz-eyebrow"><span aria-hidden="true">+</span> Diagnóstico rápido</p>
+          <h2 id="quiz-section-title">Seu imóvel tem<br>um próximo passo.</h2>
+          <p class="quiz-intro-description">Responda a 4 perguntas sobre seu imóvel. Ao final, compartilhe seu resumo no WhatsApp e converse com a equipe.</p>
+          <div class="quiz-intro-meta"><span>4 perguntas</span><span>Sem cadastro</span></div>
+          <ol class="quiz-topics" aria-label="O que vamos entender">
+            <li><span aria-hidden="true">01</span> Perfil do imóvel</li>
+            <li><span aria-hidden="true">02</span> Área construída</li>
+            <li><span aria-hidden="true">03</span> Situação documental</li>
+            <li><span aria-hidden="true">04</span> Urgência do atendimento</li>
+          </ol>
+          <p class="quiz-disclaimer">Este questionário organiza suas informações para o atendimento. Não substitui vistoria, laudo ou análise de enquadramento por profissional habilitado.</p>
+          <a class="quiz-direct-contact wa-cta" href="https://wa.me/5521991326294" target="_blank" rel="noopener noreferrer"><img src="assets/whatsapp.svg" class="wa-icon" alt="" width="23" height="23"><span class="wa-label">Prefiro falar pelo WhatsApp</span></a>
+          <noscript><p class="quiz-no-script">Ative o JavaScript para usar o questionário. Você também pode falar diretamente pelo WhatsApp.</p><a class="wa-cta" href="https://wa.me/5521991326294" target="_blank" rel="noopener noreferrer"><img src="assets/whatsapp.svg" class="wa-icon" alt="" width="22" height="22"><span>Falar no WhatsApp</span></a></noscript>
+        </div>
+        <div class="quiz-card" id="quiz-box" tabindex="-1">
+                        <div class="quiz-header">
+                            <span class="quiz-header-title">Diagnóstico Rápido de Risco</span>
+                            <span class="quiz-step-indicator" id="quiz-step-indicator" role="status" aria-live="polite">Passo 1 de 4</span>
+                        </div>
+                        <div class="quiz-progress-bar" aria-hidden="true">
+                            <div class="quiz-progress-fill" id="quiz-progress-fill" data-step="1"></div>
+                        </div>
+                        <div class="quiz-step-pane active" data-step="1">
+                            <h3 class="quiz-question-title" tabindex="-1">1. Qual o perfil do seu imóvel / empreendimento?</h3>
+                            <div class="quiz-options-grid">
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Perfil do Imóvel" data-value="Condomínio Residencial ou Hotelaria">
+                                    <span>🏢 Condomínio Residencial ou Hotelaria</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Perfil do Imóvel" data-value="Comercial / Escritórios / Lojas">
+                                    <span>🏬 Comercial / Escritórios / Lojas</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Perfil do Imóvel" data-value="Galpão Logístico ou Indústria">
+                                    <span>🏭 Galpão Logístico ou Indústria</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Perfil do Imóvel" data-value="Escola, Hospital ou Clínica">
+                                    <span>🏥 Escola, Hospital ou Clínica</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Perfil do Imóvel" data-value="Restaurante, Bar ou Casa Noturna">
+                                    <span>🍽️ Restaurante, Bar ou Casa Noturna</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                            <div class="quiz-nav-row">
+                                <span class="quiz-auto-advance">Selecione para avançar automaticamente</span>
+                            </div>
+                        </div>
+                        <div class="quiz-step-pane" hidden data-step="2">
+                            <h3 class="quiz-question-title" tabindex="-1">2. Qual a metragem quadrada aproximada da área construída?</h3>
+                            <div class="quiz-options-grid">
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Área Construída" data-value="Até 900 m²">
+                                    <span>📐 Até 900 m²</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Área Construída" data-value="Acima de 900 m² até 1.500 m²">
+                                    <span>📐 Acima de 900 m² até 1.500 m²</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Área Construída" data-value="Acima de 1.500 m²">
+                                    <span>🏭 Acima de 1.500 m²</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Área Construída" data-value="Não sei exatamente a área">
+                                    <span>❓ Não sei informar a metragem exata</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                            <div class="quiz-nav-row">
+                                <button type="button" disabled class="btn-quiz-back js-quiz-back">← Voltar</button>
+                                <button type="button" disabled class="btn-quiz-restart js-quiz-restart">Recomeçar</button>
+                            </div>
+                        </div>
+                        <div class="quiz-step-pane" hidden data-step="3">
+                            <h3 class="quiz-question-title" tabindex="-1">3. Qual a situação documental atual perante os Bombeiros?</h3>
+                            <div class="quiz-options-grid">
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Situação CBMERJ" data-value="Recebeu Notificação / Auto de Infração do CBMERJ">
+                                    <span>🚨 Recebeu Notificação ou Auto de Infração</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Situação CBMERJ" data-value="Nunca teve Projeto ou Laudo de Exigências">
+                                    <span>📄 Nunca teve Projeto Técnico ou Laudo de Exigências</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Situação CBMERJ" data-value="Certificado de Aprovação (CA) Vencido">
+                                    <span>❌ Certificado de Aprovação (CA) Vencido</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Situação CBMERJ" data-value="Regularização Preventiva / Obtenção de Alvará">
+                                    <span>🔄 Regularização Preventiva / Alvará Inicial</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                            <div class="quiz-nav-row">
+                                <button type="button" disabled class="btn-quiz-back js-quiz-back">← Voltar</button>
+                                <button type="button" disabled class="btn-quiz-restart js-quiz-restart">Recomeçar</button>
+                            </div>
+                        </div>
+                        <div class="quiz-step-pane" hidden data-step="4">
+                            <h3 class="quiz-question-title" tabindex="-1">4. Qual a urgência para a emissão da documentação?</h3>
+                            <div class="quiz-options-grid">
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Urgência do Atendimento" data-value="Urgência Máxima (Risco Iminente de Multa ou Interdição)">
+                                    <span>⚡ Urgência Máxima (Risco de Multa / Interdição)</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Urgência do Atendimento" data-value="Curto Prazo (Próximos 15 a 30 dias)">
+                                    <span>📅 Curto Prazo (Próximos 15 a 30 dias)</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                                <button type="button" disabled class="quiz-opt-btn" data-question="Urgência do Atendimento" data-value="Planejamento e Cotação Orçamentária">
+                                    <span>🔍 Planejamento Anual e Orçamento</span>
+                                    <span class="opt-arrow" aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                            <div class="quiz-nav-row">
+                                <button type="button" disabled class="btn-quiz-back js-quiz-back">← Voltar</button>
+                                <button type="button" disabled class="btn-quiz-restart js-quiz-restart">Recomeçar</button>
+                            </div>
+                        </div>
+                        <div class="quiz-result-pane" id="quiz-result-pane" hidden>
+                            <div class="result-status-card">
+                                <span class="result-badge-label" id="result-status-badge">RESUMO PARA ATENDIMENTO</span>
+                                <h3 class="quiz-question-title" tabindex="-1">Próximo passo: avaliação técnica</h3>
+                                <p class="">
+                                    Este questionário organiza suas informações para o atendimento. Não substitui vistoria, laudo ou análise de enquadramento por profissional habilitado.
+                                </p>
+                            </div>
+                            <div class="result-summary-box">
+                                <div class="summary-title">Resumo das respostas:</div>
+                                <ul class="summary-list" id="quiz-summary-list">
+                                </ul>
+                            </div>
+                            <a href="https://wa.me/5521991326294" class="wa-cta" id="btn-quiz-wa-submit" target="_blank" rel="noopener noreferrer"><img src="assets/whatsapp.svg" class="wa-icon" alt="" width="22" height="22"><span>Compartilhar no WhatsApp</span></a>
+                            <p class="privacy-note">Ao abrir o WhatsApp, você compartilha as quatro respostas acima com esse serviço. O questionário não envia informações automaticamente.</p><div class="quiz-nav-row">
+                                <button type="button" disabled class="btn-quiz-back js-quiz-back">← Ajustar Respostas</button>
+                                <button type="button" disabled class="btn-quiz-restart js-quiz-restart">🔄 Reiniciar Diagnóstico</button>
+                            </div>
+                        </div>
+                    </div>
+      </div>
+    </section>
+    <!-- shared-quiz:end -->
+    <section class="b-services b-section" id="servicos" aria-labelledby="services-title">
+      <div class="b-wrap">
+        <div class="b-section-intro">
+          <p class="b-eyebrow b-eyebrow-dark"><span class="b-cross" aria-hidden="true">+</span> 01 / Nossa atuação</p>
+          <div><h2 id="services-title">Do projeto<br>à regularização.</h2><p>Projeto, aprovação pelo Laudo de Exigências, adequação do imóvel e Certificado de Aprovação: acompanhamento técnico em cada etapa.</p></div>
+        </div>
+        <div class="b-service-grid">
+          <article class="b-service" id="projeto-incendio"><div class="b-service-top"><span>01</span><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M9 8h30v32H9V8Zm7 8h16v16H16V16Zm8-8v8m15 8h-7m-8 16v-8M9 24h7"/></svg></div><h3>Projeto de<br>incêndio</h3><p>Elaboração do projeto com as medidas de segurança contra incêndio e pânico conforme as características do imóvel.</p><a href="#contato">Conversar sobre meu projeto <span aria-hidden="true">↗</span></a></article>
+          <article class="b-service" id="laudo-exigencias"><div class="b-service-top"><span>02</span><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M12 7h18l7 7v27H12V7Zm18 0v8h7M19 24h11m-11 7h7m3-12 3 3 6-7"/></svg></div><h3>Laudo de<br>Exigências</h3><p>Acompanhamento da análise pelo CBMERJ até a emissão do Laudo de Exigências, que formaliza a aprovação do projeto.</p><a href="#contato">Entender a aprovação do projeto <span aria-hidden="true">↗</span></a></article>
+          <article class="b-service" id="adequacao-projeto"><div class="b-service-top"><span>03</span><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M9 9v15h30V9M24 24v15m-6 0h12M5 9h8m22 0h8M18 43l6-4 6 4"/><circle cx="24" cy="24" r="4"/></svg></div><h3>Adequação ao<br>projeto aprovado</h3><p>Orientação e acompanhamento das adequações previstas no projeto aprovado e no Laudo de Exigências, incluindo os sistemas de proteção.</p><a href="#contato">Planejar as adequações <span aria-hidden="true">↗</span></a></article>
+          <article class="b-service" id="certificado-aprovacao"><div class="b-service-top"><span>04</span><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M12 7h18l7 7v27H12V7Zm18 0v8h7M19 23h11m-11 6h7m-6 6 3 3 8-8"/></svg></div><h3>Certificado de<br>Aprovação</h3><p>Após as adequações, acompanhamento da solicitação do Certificado de Aprovação, que formaliza a regularização do imóvel no CBMERJ.</p><a href="#contato">Regularizar meu imóvel <span aria-hidden="true">↗</span></a></article>
+        </div>
+        <div class="b-other-services"><h3>Outras frentes<br>de engenharia</h3><ul><li>Licenciamento sanitário</li><li>Legalização e alvará de obras</li><li>Construção civil e adequações</li><li>Autovistoria predial</li></ul><a class="b-text-link b-dark-link" href="#contato">Consultar escopo <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="b-process b-section" id="processo" aria-labelledby="process-title">
+      <div class="b-wrap">
+        <div class="b-section-intro"><p class="b-eyebrow"><span class="b-cross" aria-hidden="true">+</span> 02 / Como trabalhamos</p><div><h2 id="process-title">Uma direção técnica.<br>Em cada etapa.</h2><p>Da elaboração do projeto ao Certificado de Aprovação, organizamos o percurso conforme a situação do seu imóvel.</p></div></div>
+        <ol class="b-process-list">
+          <li><span class="b-step-number">01<span aria-hidden="true">↗</span></span><div><span class="b-step-caption">PROJETO</span><h3>Definir as medidas de proteção.</h3><p>Levantamos as características da edificação e elaboramos o projeto de segurança contra incêndio e pânico.</p></div></li>
+          <li><span class="b-step-number">02<span aria-hidden="true">↗</span></span><div><span class="b-step-caption">LAUDO DE EXIGÊNCIAS</span><h3>Obter a aprovação do projeto.</h3><p>Apresentamos o projeto ao CBMERJ e acompanhamos a análise para emissão do Laudo de Exigências.</p></div></li>
+          <li><span class="b-step-number">03<span aria-hidden="true">↗</span></span><div><span class="b-step-caption">ADEQUAÇÃO</span><h3>Adequar o imóvel ao projeto aprovado.</h3><p>Orientamos as adequações e a implantação das medidas previstas no projeto aprovado e no Laudo de Exigências.</p></div></li>
+          <li><span class="b-step-number">04<span aria-hidden="true">↗</span></span><div><span class="b-step-caption">CERTIFICADO DE APROVAÇÃO</span><h3>Concluir a regularização.</h3><p>Com as adequações realizadas, acompanhamos a solicitação do Certificado de Aprovação junto ao CBMERJ.</p></div></li>
+        </ol>
+        <div class="b-process-note"><span class="b-cross" aria-hidden="true">+</span><p>O ponto de partida pode ser um projeto existente, uma notificação ou a primeira análise do imóvel.</p><a href="#contato">Vamos entender o seu cenário <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="b-responsible" id="responsavel" aria-labelledby="responsible-title">
+      <div class="b-wrap b-responsible-layout">
+        <div><p class="b-eyebrow"><span class="b-cross" aria-hidden="true">+</span> Engenheira responsável</p><h2 id="responsible-title">Tahiane Santos</h2></div>
+        <div class="b-responsible-details"><p class="b-responsible-role">Engenheira Civil<br>Engenheira de Segurança do Trabalho</p><dl class="b-responsible-records"><div><dt>CREA</dt><dd>2020103497</dd></div><div><dt>CBMERJ</dt><dd>01-601</dd></div></dl></div>
+      </div>
+    </section>
+
+    <section class="b-diagnostic" aria-labelledby="diagnostic-title"><div class="b-wrap b-diagnostic-inner"><div><p class="b-eyebrow b-eyebrow-dark">COMECE PELO QUE VOCÊ JÁ SABE</p><h2 id="diagnostic-title">Qual é a situação<br>do seu imóvel?</h2><p>Organize as informações iniciais para conversar com a TxJ sobre os próximos passos.</p></div><div class="b-diagnostic-action"><a class="b-button b-button-navy" data-diagnostic href="#diagnostico">Fazer diagnóstico <span aria-hidden="true">↗</span></a><span>Uma orientação começa com uma conversa.</span></div></div></section>
+
+    <section class="b-faq b-section" id="duvidas" aria-labelledby="faq-title"><div class="b-wrap b-faq-layout"><div><p class="b-eyebrow b-eyebrow-dark"><span class="b-cross" aria-hidden="true">+</span> 03 / Antes de começar</p><h2 id="faq-title">Menos dúvidas.<br>Mais clareza.</h2><p>Algumas respostas para dar<br>o primeiro passo.</p></div><div class="b-faq-list">
+      <details><summary>Por onde começar a regularização do imóvel?<span aria-hidden="true">+</span></summary><p>Comece reunindo as informações sobre o uso, a localização e a documentação existente. A análise técnica identifica a situação da edificação e orienta os próximos passos conforme suas características.</p></details>
+      <details><summary>A TxJ pode avaliar um projeto já existente?<span aria-hidden="true">+</span></summary><p>Você pode enviar o projeto e os documentos disponíveis para a análise inicial da demanda. O escopo de atuação será definido a partir da situação do imóvel.</p></details>
+      <details><summary>O diagnóstico confirma a regularidade do imóvel?<span aria-hidden="true">+</span></summary><p>Não. O questionário organiza as informações para o atendimento. Ele não substitui vistoria, laudo ou avaliação por profissional habilitado, nem confirma a regularidade do imóvel.</p></details>
+      <details><summary>Quais regiões a TxJ atende?<span aria-hidden="true">+</span></summary><p>O atendimento abrange o Estado do Rio de Janeiro, conforme a disponibilidade e o escopo do serviço. Informe a localização do imóvel na conversa inicial.</p></details>
+    </div></div></section>
+
+    <section class="b-contact b-section" id="contato" aria-labelledby="contact-title"><div class="b-wrap"><p class="b-eyebrow"><span class="b-cross" aria-hidden="true">+</span> Seu próximo passo</p><div class="b-contact-grid"><h2 id="contact-title">Vamos olhar<br>para o seu<br><em>projeto.</em></h2><div class="b-contact-copy"><p>Conte onde fica o imóvel e o que você precisa resolver. A partir daí, conversamos sobre a orientação técnica adequada.</p><a class="b-button b-button-gold wa-cta" href="https://wa.me/5521991326294" target="_blank" rel="noopener noreferrer"><img class="wa-icon" src="assets/whatsapp.svg" width="23" height="23" alt="" aria-hidden="true"><span class="wa-label">Falar pelo WhatsApp</span><span class="wa-arrow" aria-hidden="true">↗</span></a><a class="b-phone" href="tel:+5521991326294">(21) 99132-6294</a><span class="b-contact-region">Atendimento no Estado do Rio de Janeiro</span></div></div></div></section>
+  </main>
+  <aside aria-label="Contato rápido"><a class="wa-cta wa-floating" href="https://wa.me/5521991326294" target="_blank" rel="noopener noreferrer" aria-label="Fale pelo WhatsApp — TxJ Engenharia"><img class="wa-icon" src="assets/whatsapp.svg" width="23" height="23" alt="" aria-hidden="true"><span class="wa-label">Fale pelo WhatsApp</span></a></aside>
+
+  <footer class="b-footer" id="rodape"><div class="b-wrap"><div class="b-footer-top"><a class="b-logo" href="#inicio" aria-label="TxJ Engenharia — voltar ao início"><img src="assets/logo-clara.webp" width="201" height="64" alt="TxJ Engenharia" loading="lazy"></a><div class="b-footer-profile"><p class="b-footer-name"><a href="#responsavel">Tahiane Santos</a><span>Engenheira responsável</span></p><p>Engenheira Civil<br>Engenheira de Segurança do Trabalho</p><p class="b-footer-records"><span>CREA: 2020103497</span><span>CBMERJ: 01-601</span></p></div><a href="#inicio">Voltar ao topo <span aria-hidden="true">↑</span></a></div><div class="b-footer-bottom"><span>© TxJ Engenharia</span><div><a href="privacidade.html" target="_blank" rel="noopener noreferrer">Privacidade</a><a href="termos.html" target="_blank" rel="noopener noreferrer">Termos de uso</a></div><span>Rio de Janeiro · Brasil</span></div></div></footer>
+  <noscript><p class="b-wrap">O diagnóstico precisa de JavaScript. Para atendimento, use os links do WhatsApp disponíveis nesta página.</p></noscript>
+</body>
+</html>

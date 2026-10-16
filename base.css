@@ -2,7 +2,5 @@
 @font-face{font-family:Archivo;src:url('assets/archivo-latin.woff2') format('woff2');font-weight:100 900;font-display:swap}
 *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:40px}body{margin:0;font-family:Inter,Arial,sans-serif;-webkit-font-smoothing:antialiased}button,input,select,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit}img,svg{max-width:100%}button:disabled{cursor:default}h1,h2,h3,p,figure{margin:0}a,button,summary{touch-action:manipulation}button,a,summary{outline-offset:6px}:focus-visible{outline:3px solid #a56616}button[hidden],[hidden]{display:none!important}
 .skip-link{position:fixed;left:16px;top:-100px;z-index:100;padding:16px;background:#fff;color:#112838}.skip-link:focus{top:8px}
-.preview-bar{min-height:37px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px 4%;background:#e9e6df;color:#36414a;font:500 10px/1.4 Inter,Arial,sans-serif;letter-spacing:.09em}.preview-bar a{min-height:25px;display:inline-flex;align-items:center;text-decoration:none;letter-spacing:0;font-size:11px}.preview-bar a:hover{text-decoration:underline}
-@media(max-width:600px){.preview-bar{gap:8px;padding:6px 18px;min-height:42px}.preview-bar span{max-width:145px;text-align:center;font-size:8px}.preview-bar a{font-size:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 
