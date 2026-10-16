@@ -4,6 +4,12 @@
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const whatsapp = 'https://wa.me/5521991326294';
+  const header = $('.b-header');
+  if (header && 'ResizeObserver' in window) {
+    new ResizeObserver(() => {
+      document.documentElement.style.setProperty('--b-header-height', `${header.getBoundingClientRect().height}px`);
+    }).observe(header);
+  }
   const menu = $('[data-menu-toggle]');
   const nav = menu && document.getElementById(menu.getAttribute('aria-controls'));
   const closeMenu = () => {
